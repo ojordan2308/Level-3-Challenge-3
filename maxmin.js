@@ -12,9 +12,4 @@ const findMaxMin = arr => {
     return [min, max]
 }
 
-let result = findMaxMin(Deno.args.map(Number))
-if (result[0] && result[1]) {
-    console.log(result)
-} else {
-    console.log('Invalid input. Ensure all arguments are numbers.')
-}
+console.log(findMaxMin(Deno.args.map(Number)))
